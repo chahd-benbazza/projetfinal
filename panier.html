@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier</title>
+    <link rel="stylesheet" href="projet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html" class="logo">Boutique Cosmétiques</a>
+        <ul>
+            <li><a href="boutique.html">Boutique</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <a href="panier.html">
+                    <i class="fas fa-shopping-cart"></i> Panier
+                    <span id="cart-quantity">(0)</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section class="cart-section">
+    <h2>Votre Panier</h2>
+    <div id="cart-items"></div>
+    <div id="cart-total"></div>
+</section>
+
+<script src="scripts.js"></script>
+</body>
+</html>

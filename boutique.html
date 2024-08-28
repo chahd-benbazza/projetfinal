@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique Cosmétiques</title>
+    <link rel="stylesheet" href="projet.css">
+    <!-- Lien Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="projet.html" class="logo">ChachaTilbury</a>
+            <ul>
+                <li><a href="boutique.html">Boutique</a></li>
+                <li><a href="a-propos.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a href="panier.html">
+                        <i class="fas fa-shopping-cart"></i> Panier
+                        <span id="cart-quantity">(0)</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+    </header>
+     
+
+    <!-- Section Boutique - Affichage des produits -->
+    <section class="product-list">
+        
+        <!-- Produit 1 -->
+        <div class="product">
+            <img src="https://i.pinimg.com/564x/81/4b/52/814b529c810d032282eddca3f5965813.jpg" alt="Produit 1" class="product-img" data-hover="https://i.pinimg.com/736x/2a/22/8b/2a228b3a0b8b3d8497b6154f9c26ffab.jpg">
+            <h3>Crème Hydratante</h3>
+            <p>Prix : 29,99€</p>
+            <div class="quantity-select">
+                <label for="quantity1">Quantité :</label>
+                <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+            </div>
+            <button class="add-to-cart" onclick="addToCart(1)">Ajouter au panier</button>
+        </div>
+
+        <!-- Produit 2 -->
+        <div class="product">
+            <img src="https://i.pinimg.com/564x/3d/68/8f/3d688f63267af0777f79df96f8551583.jpg" alt="Produit 2" class="product-img" data-hover="https://i.pinimg.com/564x/7d/0d/65/7d0d65b132248efbad9523ba42e49f86.jpg">
+            <h3>Sérum Anti-âge</h3>
+            <p>Prix : 39,99€</p>
+            <div class="quantity-select">
+                <label for="quantity2">Quantité :</label>
+                <input type="number" id="quantity2" name="quantity2" min="1" value="1">
+            </div>
+            <button class="add-to-cart" onclick="addToCart(2)">Ajouter au panier</button>
+        </div>
+
+        <!-- Produit 3 -->
+        <div class="product">
+            <img src="https://i.pinimg.com/564x/57/1f/41/571f4167e04b5f2b90bb76173b8945e9.jpg" alt="Produit 3" class="product-img" data-hover="https://i.pinimg.com/564x/35/6c/45/356c450cf52400db00515a0b03e6f085.jpg">
+            <h3>Masque Visage</h3>
+            <p>Prix : 24,99€</p>
+            <div class="quantity-select">
+                <label for="quantity3">Quantité :</label>
+                <input type="number" id="quantity3" name="quantity3" min="1" value="1">
+            </div>
+            <button class="add-to-cart" onclick="addToCart(3)">Ajouter au panier</button>
+        </div>
+
+        <!-- Produit 4 -->
+        <div class="product">
+            <img src="https://i.pinimg.com/564x/a0/78/f5/a078f5742c831adaa6d2984a1272c5a3.jpg" alt="Produit 4" class="product-img" data-hover="https://i.pinimg.com/564x/3b/ae/63/3bae63de17b1925331473dd9de1b2ed0.jpg">
+            <h3>Baume à Lèvres</h3>
+            <p>Prix : 14,99€</p>
+            <div class="quantity-select">
+                <label for="quantity4">Quantité :</label>
+                <input type="number" id="quantity4" name="quantity4" min="1" value="1">
+            </div>
+            <button class="add-to-cart" onclick="addToCart(4)">Ajouter au panier</button>
+        </div>
+
+        <!-- Produit 5 -->
+        <div class="product">
+            <img src="https://i.pinimg.com/564x/72/47/11/72471193bf767e591b62549e44a20992.jpg" alt="Produit 5" class="product-img" data-hover="https://i.pinimg.com/564x/6b/98/32/6b9832aa26f32d141b651da2ffcf021e.jpg">
+            <h3>Lotion Corporelle</h3>
+            <p>Prix : 19,99€</p>
+            <div class="quantity-select">
+                <label for="quantity5">Quantité :</label>
+                <input type="number" id="quantity5" name="quantity5" min="1" value="1">
+            </div>
+            <button class="add-to-cart" onclick="addToCart(5)">Ajouter au panier</button>
+        </div>
+
+        <!-- Produit 6 -->
+        <div class="product">
+            <img src="https://i.pinimg.com/564x/93/78/39/937839e01c4216138b46c1d675fb2627.jpg" alt="Produit 6" class="product-img" data-hover="https://i.pinimg.com/564x/32/d2/0f/32d20fd8bfbe0afb3c3ef2dae759dc44.jpg">
+            <h3>Huile Essentielle</h3>
+            <p>Prix : 12,99€</p>
+            <div class="quantity-select">
+                <label for="quantity6">Quantité :</label>
+                <input type="number" id="quantity6" name="quantity6" min="1" value="1">
+            </div>
+            <button class="add-to-cart" onclick="addToCart(6)">Ajouter au panier</button>
+        </div>
+
+        <!-- Produit 7 -->
+        <div class="product">
+            <img src="https://i.pinimg.com/564x/ed/d0/fd/edd0fd3ff7038c8f6a10fab94316ee63.jpg" alt="Produit 7" class="product-img" data-hover="https://i.pinimg.com/564x/05/5e/d9/055ed92bb1ee5859397c19408c727f06.jpg">
+            <h3>Gel Douche</h3>
+            <p>Prix : 9,99€</p>
+            <div class="quantity-select">
+                <label for="quantity7">Quantité :</label>
+                <input type="number" id="quantity7" name="quantity7" min="1" value="1">
+            </div>
+            <button class="add-to-cart" onclick="addToCart(7)">Ajouter au panier</button>
+        </div>
+
+        <!-- Produit 8 -->
+        <div class="product">
+            <img src="https://i.pinimg.com/564x/b0/0c/d9/b00cd91a096559e70d5c6beb987c1b16.jpg" alt="Produit 8" class="product-img" data-hover="https://i.pinimg.com/564x/b3/d6/aa/b3d6aaf8a2bb527b1e39f3d421aad408.jpg">
+            <h3>Gommage Corps</h3>
+            <p>Prix : 22,99€</p>
+            <div class="quantity-select">
+                <label for="quantity8">Quantité :</label>
+                <input type="number" id="quantity8" name="quantity8" min="1" value="1">
+            </div>
+            <button class="add-to-cart" onclick="addToCart(8)">Ajouter au panier</button>
+        </div>
+
+        <!-- Produit 9 -->
+        <div class="product">
+            <img src="https://i.pinimg.com/564x/2b/78/2a/2b782af1230b63c3b7db93ada7fd9e95.jpg" alt="Produit 9" class="product-img" data-hover="https://i.pinimg.com/736x/48/d9/44/48d944914165cf3807fb9093cd07fb4a.jpg">
+            <h3>Savon Naturel</h3>
+            <p>Prix : 7,99€</p>
+            <div class="quantity-select">
+                <label for="quantity9">Quantité :</label>
+                <input type="number" id="quantity9" name="quantity9" min="1" value="1">
+            </div>
+            <button class="add-to-cart" onclick="addToCart(9)">Ajouter au panier</button>
+        </div>
+
+        <!-- Produit 10 -->
+        <div class="product">
+            <img src="https://i.pinimg.com/564x/91/53/fa/9153fa6c299b56e3c4eb8574998af1f6.jpg" alt="Produit 10" class="product-img" data-hover="https://i.pinimg.com/564x/31/36/65/3136658d28b189e150463c6d0adccc3f.jpg">
+            <h3>Crème Solaire</h3>
+            <p>Prix : 15,99€</p>
+            <div class="quantity-select">
+                <label for="quantity10">Quantité :</label>
+                <input type="number" id="quantity10" name="quantity10" min="1" value="1">
+            </div>
+            <button class="add-to-cart" onclick="addToCart(10)">Ajouter au panier</button>
+        </div>
+
+    </section>
+
+    <script src="projet.js"></script>
+</body>
+</html>

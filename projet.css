@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #ff66b2;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* Background image for the welcome section */
+.welcome {
+    background-image: url('https://i.pinimg.com/564x/6a/e7/47/6ae747e4e842311b63b4cd24a18eb80e.jpg') ; /* URL de l'image ici */
+    background-size: cover; /* Pour que l'image couvre toute la section */
+    background-position: center; /* Centrer l'image */
+    height: 400px; /* Hauteur de la section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Texte en blanc */
+    text-align: center;
+}
+
+.welcome button {
+    background-color: #ff66b2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.welcome button:hover {
+    background-color: #ff3385;
+}
+main {
+    padding: 50px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h1, h2, h3 {
+    color: #c88484;
+    text-align: center;
+}
+
+.welcome {
+    background-color: #ffe6f2;
+    padding: 50px;
+    text-align: center;
+}
+
+.welcome button {
+    background-color: #ff66b2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.welcome button:hover {
+    background-color: #ff3385;
+}
+
+/* Section Meilleures Ventes */
+.best-sellers {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.product-container {
+    display: flex;
+    justify-content: center; /* Centrer les produits horizontalement */
+    gap: 20px; /* Espacement entre les produits */
+}
+.product {
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 400px;
+    color: white; /* Couleur par défaut */
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.product h3 {
+    background-color: rgba(0, 0, 0, 0.6); /* Assombrir le texte pour le rendre lisible */
+    padding: 5px;
+    border-radius: 10px;
+    color: ; /* Couleur blanche pour les titres */
+}
+
+.product p {
+    background-color: rgba(0, 0, 0, 0.6); /* Assombrir le texte pour le rendre lisible */
+    padding: 5px;
+    border-radius: 10px;
+    color: beige; /* Texte beige uniquement pour les paragraphes */
+}
+
+.product button {
+    background-color: #ff66b2;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.product button:hover {
+    background-color: #ff3385;
+}
+/* Section vidéo publicitaire */
+.advertisement-video {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffecfd; /* Couleur de fond douce pour la section vidéo */
+}
+
+.advertisement-video video {
+    width: 100%; /* La vidéo prendra 80% de la largeur de la page */
+    max-width: 10000px; /* Limite maximale de la largeur */
+    border-radius: 8px; /* Bordure arrondie */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Effet d'ombre légère */
+}
+/* Section Promotions */
+.promotions {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.promotion-container {
+    display: flex;
+    justify-content: center; /* Centrer les produits promotionnels horizontalement */
+    gap: 20px; /* Espacement entre les produits promotionnels */
+}
+
+.promotion {
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 400px;
+    color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.promotion h3, .promotion p {
+    background-color: rgba(0, 0, 0, 0.6); /* Assombrir le texte pour le rendre lisible */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.promotion button {
+    background-color: #ff66b2;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.promotion button:hover {
+    background-color: #ff3385;
+}
+footer {
+    background-color: #32132d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+nav ul li a {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a i {
+    margin-right: 5px;
+    font-size: 18px;
+}
+/* Section Boutique */
+.product-list {
+    display: flex;
+    flex-wrap: wrap; /* Les produits se déplacent à la ligne si l'espace est insuffisant */
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Section Boutique */
+.product {
+    /* Assure que les images ont un conteneur avec une taille définie */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px; /* Largeur du conteneur pour les images */
+    height: 350px; /* Hauteur du conteneur pour les images */
+    overflow: hidden; /* Masque les parties des images qui dépassent */
+    margin-bottom: 20px;
+}
+
+.product img {
+    width: 100%; /* Remplit la largeur du conteneur */
+    height: 100%; /* Remplit la hauteur du conteneur */
+    object-fit: cover; /* Ajuste l'image pour couvrir le conteneur sans déformation */
+    border-radius: 8px;
+    transition: opacity 0.3s ease; /* Transition douce pour le changement d'image */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Légère mise en avant du produit au survol */
+}
+
+
+
+
+.product h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product p {
+    font-size: 16px;
+    color: beige;
+}
+
+/* Styles pour la sélection de quantité et le bouton */
+.quantity-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.quantity-select label {
+    margin-right: 10px;
+    font-size: 16px;
+    color: black; /* Le mot "Quantité" sera en noir */
+}
+
+.quantity-select input {
+    width: 50px;
+    padding: 4%;
+    text-align: center;
+}
+
+.add-to-cart {
+    background-color: #ff66b2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #ff3385;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: opacity 0.3s ease; /* Transition douce pour le changement d'image */
+}
+
+#cart-quantity {
+    font-weight: bold;
+    color: #ff0000; /* Couleur rouge pour bien se démarquer */
+    margin-left: 5px;
+}
+/* Section Boutique */
+.product-list {
+    display: flex;
+    flex-wrap: wrap; /* Les produits se déplacent à la ligne si l'espace est insuffisant */
+    justify-content: space-between;
+    padding: 20px;
+    background-image: url(https://i.pinimg.com/564x/01/fe/72/01fe72460a3ff306adf7fb4349f8ac1a.jpg); /* Image de fond */
+    background-size: cover; /* L'image couvre toute la section */
+    background-position: center; /* Centrer l'image */
+    background-repeat: no-repeat; /* Ne pas répéter l'image */
+}
+.panier-icon {
+    width: 20px; /* Ajuste la taille de l'icône */
+    height: auto;
+    margin-right: 5px; /* Espace entre l'icône et le texte "Panier" */
+    vertical-align: middle; /* Aligne verticalement l'icône avec le texte */
+}
+.cart-item {
+    margin: 20px 0;
+}
+
+.cart-item p {
+    margin: 5px 0;
+}
+
+#cart-total {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+hr {
+    border: 1px solid #ddd;
+    margin: 10px 0;
+} 
